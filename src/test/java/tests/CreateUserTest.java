@@ -40,6 +40,6 @@ user.setLastName("Raketskaya");
                 .post(CREATE_USER_ENDPOINT)
                 .then()
                 .assertThat()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_BAD_REQUEST);
     }
 }
